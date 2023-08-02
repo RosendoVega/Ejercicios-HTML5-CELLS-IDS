@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <form>
+        <section>
+            <p>Datalist</p>
+                <label for="inputLista">Lista de colores</label>
+                <input list="listacolores" name="inputlista">
+                <datalist id="listacolores">
+                    <option value="Azul">
+                    <option value="Rojo">
+                    <option value="Amarillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+                </datalist>
+        </section>
+        <section>
+            <p>Number</p>
+            <input type="number" required="true">
+        </section>
+        <section>
+            <p>Rango</p>
+            <input type="range" name="range" max="10" min="0" required="true">
+        </section>
+        <section>
+            <p>Telefono</p>
+            <input placeholder="Codigo de area + numero" type="tel" required="true">
+        </section>
+        <section>
+            <p>E-mail</p>
+            <input placeholder="alguien@ejemplo.com" type="email" name="email" required="true">
+        </section>
+        <section>
+            <p>Color</p>
+            <input type="color" name="color" required="true">
+        </section>
+        <section>
+            <p>Search</p>
+            <input type="search" name="search" required="true">
+        </section>
+        <section>
+            <p>Url</p>
+            <input placeholder="https://example.com" type="url" name="url" required="true">
+        </section>
+        <section>
+            <p>Date</p>
+            <input type="date" name="date" required="true">
+        </section>
+        <section>
+            <p>DateTime</p>
+            <input type="datetime" name="datetime" required="true">
+        </section>
+        <section>
+            <p>DateTimeLocal</p>
+            <input type="datetime-local" name="datetimelocal" required="true">
+        </section>
+        <section>
+            <p>Mont</p>
+            <input type="month" list="listames" name="bday-month" required="true">
+            <datalist id="listames">
+                <option value="Enero">
+                <option value="Febrero">
+                <option value="Marzo">
+                <option value="Abril">
+                <option value="Mayo">
+                <option value="junio">
+                <option value="Julio">
+                <option value="Agosto">
+                <option value="Septiembre">
+                <option value="Octubre">
+                <option value="Noviembre">
+                <option value="Diciembre">
+            </datalist>
+            <section>
+                <p>Time</p>
+                <input type="time" name="time" required="true">
+            </section>
+            <section>
+                <p>File</p>
+                <input type="file" name="file" required="true">
+            </section>
+            <section>
+                <p>CheckBox</p>
+                <input type="checkbox" name="uno" required="true">
+                <input type="checkbox" name="dos" required="true">
+            </section>
+            <section>
+                <p>RadioButton</p>
+                <input type="radio" name="uno" required="true">
+                <input type="radio" name="dos" required="true">
+            </section>
+
+            <br>
+            <input type="submit" name="btn_enviar" value="Enviar">
+            <input type="reset" name="btn_limpiar" value="limpiar">
+    </form>
+</body>

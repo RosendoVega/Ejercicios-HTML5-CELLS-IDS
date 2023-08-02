@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <h3>Información sobre el producto</h3>
+    <section>
+        <fieldset>
+            <label>Datos basicos</label>
+            <br>
+            <br>
+            <label>Nombre
+                <br>
+                <input type="text"><br>
+            </label><br>
+            
+            <label>Descripsion
+                <br>
+                <textarea name="Descripsion">
+                </textarea><br>
+            </label><br>
+            
+            <label>Foto
+                <br>
+                <input type="file">
+            </label><br><br>
+            <input type="radio">
+            <label>Añadir al contador de vistas</label>
+        </fieldset>
+    </section>
+    <br>
+    <section>
+        <fieldset>
+            <label>Datos economicos</label>
+            <br>
+            <label>Precio
+                <input type="text">
+            </label>
+
+            <label>  impuestos</label>
+            <select name="impuestos">
+                <option value="4%">4%
+                </option>
+                <option value="10%">10%
+                </option>
+            </select><br><br>
+            <label> Promoción
+                <br>
+                <input type="radio"><label>Ninguno</label><br>
+                <input type="radio"><label>Transporte gratuito</label><br>
+                <input type="radio"><label>Descuento 5%</label><br>
+            </label>
+        </fieldset>
+    </section>
+    <section>
+        <br>
+        <label>Analisis de ventas anuales</label><br>
+        <table id="tabla" border="1"
+        años="5"
+        productos="40"
+        nombre="A,B,C,D"
+        titulo="Analisis de ventas anuales">
+            <br>
+            <thead>
+                <tr>
+                    <td rowspan="2">Año</td>
+                    <td colspan="4" style="text-align: center;"> Expansión de ventas</td>
+                </tr>
+                <tr>
+                    <td>Producto A</td>
+                    <td>Producto B</td>
+                    <td>Producto C</td>
+                    <td>Producto D</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>N-3</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>N-2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>N-1</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>N</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Año</td>
+                    <td>Producto A</td>
+                    <td>Producto B</td>
+                    <td>Producto C</td>
+                    <td>Produicto D</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: center;"> Expansión de ventas</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+<script>
+    var Elementabla = document.getElementById('tabla')
+    var años = Elementabla.getAttribute('años')
+    var productos = Elementabla.getAttribute('productos')
+    var nombre = Elementabla.getAttribute('nombre')
+    var titulo = Elementabla.getAttribute('titulo')
+   
+    console.log("Atributos")
+    console.log("años: "+años)
+    console.log("productos: "+productos)
+    console.log("nombre: "+nombre)
+    console.log("titulo: "+titulo)
+
+</script>
+</html>

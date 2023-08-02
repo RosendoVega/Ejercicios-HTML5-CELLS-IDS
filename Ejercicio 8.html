@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <form>
+
+
+        <p onclick="this.style.color='red'">Este parrafo...</p>
+        <p ondblclick="this.style.color='red'">Este parrafo...</p>
+        <p onmouseup="this.style.color='red'">Este parrafo...</p>
+        <p onmousedown="this.style.color='red'">Este parrafo...</p>
+        <p onmousemove="this.style.color='red'">Este parrafo...</p>
+        <p onmouseover="this.style.color='red'">Este parrafo...</p>
+        <p onmouseout="this.style.color='red'">Este parrafo...</p>
+
+        <section>
+            <fieldset>
+                <label>Datos personales</label>
+                <br>
+                <br>
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label>Edad</label>
+                <input type="text" name="edad">
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset>
+                <label>Cultura general</label>
+                <br>
+                <br>
+                <label>Capital de Noruega:
+                    <input type="radio" name="Copenhague" value="Copenhague">
+                    <label>Copenhague </label>
+                    <input type="radio" name="Helsinki" value="Helsinki">
+                    <label>Helsinki </label>
+                    <input type="radio" name="Oslo" value="Oslo">
+                    <label>Oslo </label>
+                </label>
+                <br><br>
+                <label>Fecha de la Revolución francesa:
+                    <input type="radio" name="1492" value="1492">
+                    <label>1492 </label>
+                    <input type="radio" name="1789" value="1789">
+                    <label>1789 </label>
+                    <input type="radio" name="1917" value="1917">
+                    <label>1917 </label>
+                </label>
+            </fieldset>
+        </section>
+        <h1>HTML5 number input</h1>
+        <section>
+            <h2>Ejemplo 1</h2>
+            <label">Introduce tu edad:
+            <input type="number">
+            </label>
+            <input type="submit" name="btn_enviar" value="Enviar">
+        </section>
+        <section>
+            <h2>Ejemplo 2</h2>
+            <label">Introduce tu edad (min=18 max=99, campo obligatorio)
+            <input type="number" required="true">
+            </label>
+            <input type="submit" name="btn_enviar" value="Enviar">
+        </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Enlaces</title>
+</head>
+<body>
+    <header id="inicio">
+        <h1>Enlaces</h1>
+        <ul>
+            <li><a href="mailto:someone@example.com">Enviar mail</a></li>
+            <li><a href="tel:+4733378901"> Llamada telfonica</a></li>
+            <!--[protocol]:[username]?[action] chat/call/sendfile/add/userinfo-->
+            <li><a href="skype:example123?chat"> Skype</a></li>
+            <!--[protocol]:[action]?[text= ]&[phone=+]-->
+            <li><a href="whatsapp://send?text=Tu mensaje&phone=+123456789***">whatsapp1</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=15551234567">whatsapp2</a></li>
+            <li><a href="#footer">Seccion dek documento (anclas)</a></li>
+            <li><a href="javascript:alert('Hello world!');">javascript</a></li>
+        </ul>
+        Semántica
+        <ul>
+            <li><a href="https://www.google.com" target="_blank"> Google (blank)</a></li>
+            <li><a href="https://www.google.com" target="_parent">Google (top)</a></li>
+            <!--rel: especifica la relación entre el docuemnto actual y el documento ligado-->
+            <li>
+                <a href="http://intranet.ids.com.mc" rel="author">Intranet IDS</a>
+            </li>
+        </ul>
+    </header>
+    <section id="seccion1">
+        <article>
+            <hr>
+            <br><br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti
+             quibusdam ducimus, quae doloribus dolore deserunt modi facilis laudantium 
+             perferendis consequatur, atque doloremque dolores autem, in placeat nobis 
+             obcaecati. Labore!
+             <br><br><br><br>
+        </article>
+    </section>
+    <footer id="footer">
+        <a href="#inicio" rel="">Inicio</a>
+        <p>Posted by: me</p>
+        <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
+    </footer>
+</body>
+</html>
